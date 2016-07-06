@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79777983-D96A-469C-8963-176113AEEE67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XamChat.Testing</RootNamespace>
+    <AssemblyName>XamChat.Testing</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.2.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Test.cs" />
+    <Compile Include="ViewModel\LoginViewModelTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XamChat.ViewModels\XamChat.ViewModels.csproj">
+      <Project>{627D6065-BC13-4461-A45A-74F3DE289882}</Project>
+      <Name>XamChat.ViewModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.ServiceLocator\Infrastructure.ServiceLocator.csproj">
+      <Project>{3C8793F4-7748-4230-9BDD-B8B665BAA1C2}</Project>
+      <Name>Infrastructure.ServiceLocator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XamChat.Service\XamChat.Service.csproj">
+      <Project>{5D399AD4-6C37-4724-B1DA-6411A753CEC5}</Project>
+      <Name>XamChat.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XamChat.Data\XamChat.Data.csproj">
+      <Project>{D33007FF-DDFF-4981-8BBF-6217BE3E6817}</Project>
+      <Name>XamChat.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
