@@ -190,50 +190,29 @@
         <scene sceneID="ACr-Md-cMu">
             <objects>
                 <tableViewController title="Messages" id="GWd-0q-NVp" customClass="MessagesController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0cK-qh-V1Q">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0cK-qh-V1Q" horizontalHuggingPriority="81" verticalHuggingPriority="106">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyViewCell" id="sL5-qW-VJS" customClass="MyViewCell" rowHeight="44">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sL5-qW-VJS" id="EdQ-0m-jw2">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="sL5-qW-VJS" id="EdQ-0m-jw2" horizontalHuggingPriority="1">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0p-kQ-6OS">
-                                            <rect key="frame" x="0.0" y="11" width="600" height="44"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0p-kQ-6OS" fixedFrame="YES">
+                                            <rect key="frame" x="93" y="0.0" width="300" height="43"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="heightClass=regular-widthClass=compact">
-                                                <rect key="frame" x="9" y="0.0" width="352" height="43.5"/>
+                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             </variation>
                                         </label>
                                     </subviews>
                                     <variation key="heightClass=regular-widthClass=compact">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                        <mask key="constraints">
-                                            <include reference="68"/>
-                                            <include reference="69"/>
-                                            <include reference="70"/>
-                                            <include reference="71"/>
-                                        </mask>
-                                    </variation>
-                                    <constraints>
-                                        <constraint id="68" firstItem="a0p-kQ-6OS" firstAttribute="top" secondItem="EdQ-0m-jw2" secondAttribute="top"/>
-                                        <constraint id="69" firstItem="a0p-kQ-6OS" firstAttribute="bottom" secondItem="EdQ-0m-jw2" secondAttribute="bottom"/>
-                                        <constraint id="70" firstItem="EdQ-0m-jw2" firstAttribute="trailing" secondItem="a0p-kQ-6OS" secondAttribute="trailing" constant="14"/>
-                                        <constraint id="71" firstItem="a0p-kQ-6OS" firstAttribute="leading" secondItem="EdQ-0m-jw2" secondAttribute="leading" constant="9"/>
-                                    </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="68"/>
-                                            <exclude reference="69"/>
-                                            <exclude reference="70"/>
-                                            <exclude reference="71"/>
-                                        </mask>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
@@ -243,43 +222,20 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TheirsViewCell" rowHeight="45" id="dFX-XL-Lth" customClass="TheirsViewCell">
                                 <rect key="frame" x="0.0" y="72" width="600" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dFX-XL-Lth" id="zMo-4H-whR">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="dFX-XL-Lth" id="zMo-4H-whR">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="44.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UET-7l-gdA">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UET-7l-gdA" fixedFrame="YES">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="heightClass=regular-widthClass=compact">
-                                                <rect key="frame" x="9" y="0.0" width="352" height="44.5"/>
+                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="44.5"/>
                                             </variation>
+                                            <color key="textColor" colorSpace="calibratedRGB" red="0" green="1" blue="0" alpha="1"/>
                                         </label>
                                     </subviews>
-                                    <variation key="heightClass=regular-widthClass=compact">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
-                                        <mask key="constraints">
-                                            <include reference="72"/>
-                                            <include reference="73"/>
-                                            <include reference="74"/>
-                                            <include reference="75"/>
-                                        </mask>
-                                    </variation>
-                                    <constraints>
-                                        <constraint id="72" firstItem="UET-7l-gdA" firstAttribute="top" secondItem="zMo-4H-whR" secondAttribute="top"/>
-                                        <constraint id="73" firstItem="UET-7l-gdA" firstAttribute="bottom" secondItem="zMo-4H-whR" secondAttribute="bottom"/>
-                                        <constraint id="74" firstItem="zMo-4H-whR" firstAttribute="trailing" secondItem="UET-7l-gdA" secondAttribute="trailing" constant="14"/>
-                                        <constraint id="75" firstItem="UET-7l-gdA" firstAttribute="leading" secondItem="zMo-4H-whR" secondAttribute="leading" constant="9"/>
-                                    </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="72"/>
-                                            <exclude reference="73"/>
-                                            <exclude reference="74"/>
-                                            <exclude reference="75"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="message" destination="UET-7l-gdA" id="name-outlet-UET-7l-gdA"/>
@@ -290,6 +246,7 @@
                             <outlet property="dataSource" destination="GWd-0q-NVp" id="13k-Ad-7Wh"/>
                             <outlet property="delegate" destination="GWd-0q-NVp" id="j2y-wZ-RlC"/>
                         </connections>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="1"/>
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xmo-yr-KY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -298,6 +255,6 @@
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedScreenMetrics key="destination" type="retina47"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>

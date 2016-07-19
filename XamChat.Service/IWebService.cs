@@ -13,6 +13,7 @@ namespace XamChat.Service
 		Task<Conversation[]> GetConversation (long userId);
 		Task<Message[]> GetMessages(long conversationId);
 		Task<Message> SendMessage (Message message);
+		Task<User[]> GetFriendsNotInConversation(long userId);
 	}
 }
 

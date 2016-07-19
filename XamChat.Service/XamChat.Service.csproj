@@ -44,4 +44,7 @@
       <Name>XamChat.Data</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
 </Project>

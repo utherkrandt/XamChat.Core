@@ -100,13 +100,13 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
-    <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="ConversationController.xib" />
     <InterfaceDefinition Include="FriendsController.xib" />
     <InterfaceDefinition Include="MessagesController.xib" />
     <InterfaceDefinition Include="BaseMessageCell.xib" />
     <InterfaceDefinition Include="MyViewCell.xib" />
     <InterfaceDefinition Include="TheirsViewCell.xib" />
+    <InterfaceDefinition Include="Main.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />

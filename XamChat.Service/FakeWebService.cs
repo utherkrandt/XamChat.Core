@@ -48,6 +48,15 @@ namespace XamChat.Service
 			return FakeData.GetAllUsers().Where(x=> !x.Id.Equals(userId)).ToArray();
 		}
 
+		public async Task<User[]> GetFriendsNotInConversation(long userId)
+		{
+			await Sleep(2);
+			var inConversation = FakeData.GetConversationByUser(userId);
+			return FakeData.GetAllUsers().Where(x => !inConversation.Any(y => x.Username == y.Username)
+			                                    && x.Id!=userId).ToArray();
+        }
+
+
 		public async Task<User> AddFriend(User user)
 		{
 			await Sleep (2);

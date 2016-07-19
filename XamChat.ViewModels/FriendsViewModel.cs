@@ -57,7 +57,7 @@ namespace XamChat.ViewModels
 			CheckUserLogged ();
 			IsBusy = true;
 			try {
-				Friends = await webService.GetFriends(settings.User.Id);
+				Friends = await webService.GetFriendsNotInConversation(settings.User.Id);
 			} finally {
 				IsBusy = false;
 			}
